@@ -12,7 +12,6 @@ a:hover {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 
 
@@ -28,6 +27,8 @@ body {
 
 nav {
   position: relative;
+  overflow-x: hidden;
+
 }
 
 /* nav child */
@@ -85,6 +86,7 @@ nav>div {
   font-size: 2em;
 }
 
+
 /* end of mobile menu */
 
 
@@ -96,10 +98,16 @@ nav>div {
   padding: 1em 2.5em;
   row-gap: 20px;
   align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.227);
+  transform: scale(1) translate(0);
+
+  transition: .5s all ease-in-out;
+
 }
 
 .hide-menu {
-  display: none;
+  /* display: none; */
+  transform: scale(0) translate(90%);
 }
 
 .mobile-links a {

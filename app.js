@@ -4,5 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hide-menu");
+    
+    if(mobileMenu.classList.contains('hide-menu')){
+      menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'
+    }else{
+      menuBtn.innerHTML = '<i class="fa-solid fa-close"></i>'
+
+    }
+
   });
 });
