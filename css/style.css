@@ -28,6 +28,7 @@ body {
 nav {
   position: relative;
   overflow-x: hidden;
+  
 
 }
 
@@ -263,4 +264,85 @@ a:hover {
 } */
 
 
+
+
+
 }
+/* services */
+/* mobile-design for card */
+.service-title{
+  display: flex;
+  flex-direction: column;
+  column-gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.services h2{
+  font-size: x-large;
+  letter-spacing: 6px;
+  font-weight: 400;
+  color:limegreen;
+  padding-bottom: 5px;
+  
+}
+.services h1{
+  
+  font-weight: 700;
+  padding-bottom: 5px;
+  
+  
+}
+.services button{
+  display: none;
+}
+
+.services .card{
+  display: flex;
+  padding:50px 30px ;
+  margin: auto;
+  flex-direction:column;
+  width:95%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap ;
+  
+
+}
+.services .card .card1,.card2,.card3{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 20px 20px 15px 15px;
+  margin-bottom: 30px;
+  
+}
+.services .card .card1,.card2,.card3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* attribute selector used here -s */
+.services .card div[class="container"]{
+  
+    padding: 2px 16px;
+
+}
+ /* mobile design for card ends  */
+
+ /* desktop design for card */
+ @media (min-width:670px){
+
+  .services{
+    height: 80vh;
+    width:100%;
+    padding: 0px 30px;
+    margin: 0px;
+
+  }
+  .services .card{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+  }
+
+
+ }
