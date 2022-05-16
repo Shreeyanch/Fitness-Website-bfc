@@ -1,33 +1,72 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
   <title>BFC</title>
 </head>
 
 <body>
 
   <nav>
-    <!-- <input type="checkbox" id="checkbox"> -->
-    <label class="logo"><img src="static/6658913.png" alt="">
-      <div class="title-text">
+    <div class="container">
 
-        <span class="text1">BENGALURU</span>
-        <span class="text2">FIGHTCLUB</span>
-    </label></div>
-    </label>
-    <ul class="title-items">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Feedback</a></li>
-      <li><a href="#">Contacts</a></li>
-    </ul>
+      <!-- logo -->
+      <div class="logo">
+        <img src="./static/6658913.png" alt="logo">
+        <div>
+          <p>Bengaluru</p>
+          <p>Fight Club</p>
+        </div>
+      </div>
+
+      <!-- end of logo -->
+
+      <!-- desktop nav links -->
+      <div class="desktop-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Feedback</a>
+        <a href="#">Contacts</a>
+      </div>
+      <!-- end of desktop nav links -->
+
+      <!-- mobile menu icon -->
+
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+
+      <!-- end of mobile menu icon -->
+
+
+    </div>
+
+
+    <!-- mobile links -->
+    <div class="mobile-links hide-menu container">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Feedback</a>
+      <a href="#">Contacts</a>
+    </div>
+    <!-- end of mobile links -->
+
   </nav>
 
+
+  <script src="./app.js"></script>
 </body>
 
 </html>
