@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+/* primary variables */
+:root{
+  --primary:#FAD644;
+  --secondary:#000;
+}
+
 a:hover {
   color: #ccc !important;
 }
@@ -86,7 +92,7 @@ nav>div {
 .hamburger {
   font-size: 2em;
 }
-
+/* end of navbar */
 
 /* end of mobile menu */
 
@@ -112,18 +118,127 @@ nav>div {
 }
 
 .mobile-links a {
-  color: #000;
+  color: var(--secondary);
   font-size: 1.1em;
   letter-spacing: 2px;
 }
+/* services */
+/* mobile-design for card */
+.service-title{
+  display: flex;
+  flex-direction: column;
+  column-gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.services h2{
+  font-size: x-large;
+  letter-spacing: 6px;
+  font-weight: 400;
+  color:var(--primary);
+  padding-bottom: 5px;
+  
+}
+.services h1{
+  
+  font-weight: 700;
+  padding-bottom: 5px;
+  
+  
+}
+.services button{
+  display: none;
+}
 
+.services .card{
+  display: flex;
+  padding:50px 30px ;
+  margin: auto;
+  flex-direction:column;
+  width:95%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap ;
+  
 
+}
+.services .card .card1,.card2,.card3{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 20px 20px 15px 15px;
+  margin-bottom: 30px;
+  
+}
+.services .card .card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+.services .card .card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+.services .card .card3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+/* attribute selector used here -s */
+.services .card div[class="container"]{
+  
+    padding: 2px 16px;
 
+}
+ /* mobile design for card ends  */
 
+ /* start of trainer detail */
+.trainer{
+  background-color: var(--primary) ;
+  margin-top: -5px;
+  color: aliceblue;
+}
+.trainer .trainer-title{
+  font-size: xx-large;
+  letter-spacing: 6px;
+  font-weight: 500;
+  color:#fff;
+  padding-bottom: 50px;
+  
+  
+
+ }
+ .trainer .trainer-card{
+   display: flex;
+   
+   width:85%;
+   border: #000 2px solid;
+   border-radius: 7px;
+   padding: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 20px;
+   background-color: var(--secondary);
+   column-gap: 20px;
+   
+ }
+
+ .trainer .trainer-image img{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 200%;
+  border:#fff 2px solid;
+  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.trainer .trainer-details .trainer-name{
+  font-size: large;
+  font-weight: 700;
+}
+
+/* end of trainer details */
 /* end of mobile links */
 
 
-/* end of navbar */
+
 
 /*? end of mobile design */
 
@@ -171,7 +286,7 @@ nav>div {
   }
 
   .desktop-links a {
-    color: #000;
+    color: var(--secondary);
     font-size: 1.1em;
     letter-spacing: 2px;
   }
@@ -188,7 +303,83 @@ nav>div {
 
   /* end of navbar */
 
+  /* start ofservice-card */
+  .services{
+    
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 
+  }
+  .services .card{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+  }
+  .services .card .card1 img{
+    object-fit: cover;
+    height: 410px;
+    
+  }
+  .services .card .card2 img{
+    object-fit: cover;
+    height: 410px;
+    
+  }
+  .services .card .card3 img{
+    object-fit: cover;
+    height: 410px;
+    
+  }
+  /* end of service card */
+  /* start of trainer cards */
+  .trainer {
+
+    display: none;
+  }
+  .trainer-desktop{
+    background-color: var(--primary) ;
+    margin-top: -5px;
+    color: aliceblue;
+  }
+  .trainer-desktop .trainer-title-desktop{
+    font-size: xx-large;
+    letter-spacing: 6px;
+    font-weight: 500;
+    color:#fff;
+    padding-bottom: 50px;
+    
+    
+  
+   }
+
+  .trainer-desktop .trainer-card-desktop{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin: auto;
+    column-gap: 60px;
+
+    /* border: #000 2px solid; */
+    background-color: rgba(0, 0, 0, 0.7);;
+    /* rgb for opacity */
+    
+    border-radius: 5px;
+
+  }
+
+
+  
+
+  /* end of trainer card */
   /* nav {
   background-color: green;
   display: flex;
@@ -268,81 +459,6 @@ a:hover {
 
 
 }
-/* services */
-/* mobile-design for card */
-.service-title{
-  display: flex;
-  flex-direction: column;
-  column-gap: 5px;
-  align-items: center;
-  justify-content: center;
-}
-.services h2{
-  font-size: x-large;
-  letter-spacing: 6px;
-  font-weight: 400;
-  color:limegreen;
-  padding-bottom: 5px;
-  
-}
-.services h1{
-  
-  font-weight: 700;
-  padding-bottom: 5px;
-  
-  
-}
-.services button{
-  display: none;
-}
-
-.services .card{
-  display: flex;
-  padding:50px 30px ;
-  margin: auto;
-  flex-direction:column;
-  width:95%;
-  align-items: center;
-  justify-content: center;
-  flex-wrap:wrap ;
-  
-
-}
-.services .card .card1,.card2,.card3{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  padding: 20px 20px 15px 15px;
-  margin-bottom: 30px;
-  
-}
-.services .card .card1,.card2,.card3:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-/* attribute selector used here -s */
-.services .card div[class="container"]{
-  
-    padding: 2px 16px;
-
-}
- /* mobile design for card ends  */
-
- /* desktop design for card */
- @media (min-width:670px){
-
-  .services{
-    height: 80vh;
-    width:100%;
-    padding: 0px 30px;
-    margin: 0px;
-
-  }
-  .services .card{
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    
-    
-  }
 
 
- }
+ 
