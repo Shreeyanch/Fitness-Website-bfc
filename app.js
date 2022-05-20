@@ -4,13 +4,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hide-menu");
-    
-    if(mobileMenu.classList.contains('hide-menu')){
-      menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'
-    }else{
-      menuBtn.innerHTML = '<i class="fa-solid fa-close"></i>'
 
+    if (mobileMenu.classList.contains("hide-menu")) {
+      menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    } else {
+      menuBtn.innerHTML = '<i class="fa-solid fa-close"></i>';
     }
+  });
 
+  /* swipper js */
+
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 });
