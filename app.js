@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         spaceBetween: 10,
       },
     },
+
   });
 });
 
