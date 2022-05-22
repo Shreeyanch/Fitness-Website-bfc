@@ -288,6 +288,10 @@ nav>div {
 /* services */
 /* mobile-design for  service card */
 
+.services{
+  margin-top: 3em !important;
+}
+
 .service-title {
   display: flex;
   flex-direction: column;
@@ -302,7 +306,6 @@ nav>div {
   font-weight: 400;
   color: var(--primary);
   padding-bottom: 5px;
-
 }
 
 .services h1 {
@@ -724,6 +727,10 @@ nav>div {
 
 .copyright span {
   color: var(--blue);
+}
+
+.copyright span a{
+  color: inherit;
 }
 
 /*? footer */
@@ -1349,6 +1356,7 @@ nav>div {
     background-color: var(--primary) !important;
     color: #fff !important;
 
+  }
 
   .footer-contact {
     background-color: var(--lightGrey);
