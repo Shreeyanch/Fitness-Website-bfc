@@ -345,6 +345,154 @@ nav>div {
 
 /* mobile design for card ends  */
 
+/* start of about us mobile  */
+.aboutus {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.aboutus .aboutus-part1 {
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.aboutus .aboutus-intro {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+
+}
+
+.aboutus .aboutus-intro h2 {
+  letter-spacing: 6px;
+  font-weight: 400;
+  color: var(--primary);
+
+
+
+}
+
+.aboutus .aboutus-intro h1 {
+  font-size: xx-large;
+  padding-bottom: 30px;
+
+}
+
+.aboutus .aboutus-intro p {
+  font-size: larger;
+  font-weight: 400;
+  color: #979797;
+  padding-bottom: 30px;
+
+
+
+}
+
+.aboutus .aboutus-card1 span p,
+.aboutus .aboutus-card2 span p {
+  padding-bottom: 20px;
+
+}
+
+.aboutus .aboutus-card1,
+.aboutus .aboutus-card2 {
+  background-color: #f4f2f2;
+  padding: 25px;
+  margin-bottom: 30px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+
+
+}
+
+.aboutus .aboutus-card1 p,
+.aboutus .aboutus-card2 p {
+  font-size: larger;
+  font-weight: 400;
+  color: #979797;
+  width: 300px
+}
+
+
+
+.aboutus .aboutus-card1 img,
+.aboutus .aboutus-card2 img {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+}
+
+
+.aboutus .aboutus-part1 .aboutus-container2 img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+
+
+
+}
+
+.aboutus .aboutus-part1 .aboutus-container2 button {
+
+  outline: none;
+
+  font-size: 1em;
+  padding: .9em 2em;
+  cursor: pointer;
+  text-transform: capitalize;
+
+  transition: all .3s ease-out;
+
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: 1px solid var(--primary);
+
+
+}
+
+.aboutus .aboutus-part2 ul {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0px 40px 0px;
+  padding: 20px;
+  border-top: #000 0.2px solid;
+  border-bottom: #000 0.2px solid;
+
+}
+
+.aboutus .aboutus-part2 ul li {
+  padding: 20px;
+  margin: 10px;
+  background-color: #f4f2f2;
+  font-size: x-large;
+}
+
+.aboutus .aboutus-part2 ul li p span {
+  padding: 10px;
+  color: #fff;
+  background-color: var(--secondary);
+}
+
+
+.aboutus .aboutus-part1 .aboutus-container2 button:hover {
+  background-color: transparent;
+  color: var(--primary);
+}
+
+/* end of about us mobile  */
+
 /* start of trainer detail */
 .trainer {
   background-color: var(--primary);
@@ -449,15 +597,17 @@ nav>div {
 /* start of testimonials  */
 #testimonials {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+
   width: 100%;
 
 
 }
 
-#testimonials .testimonial-heading {
+.testimonial-heading {
 
 
   display: flex;
@@ -467,13 +617,13 @@ nav>div {
   column-gap: 5px;
 }
 
-#testimonials .testimonial-heading h1 {
+.testimonial-heading h1 {
   font-size: xx-large;
   padding: 10px 20px;
   font-weight: 700;
 }
 
-#testimonials .testimonial-heading span {
+.testimonial-heading span {
 
   text-transform: uppercase;
   font-size: x-large;
@@ -825,6 +975,61 @@ nav>div {
 } */
 
 
+  /* start of about us  */
+
+  .aboutus .aboutus-part1 {
+    display: flex;
+    column-gap: 20px;
+    margin: 200px 0px 20px 0px;
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+
+  }
+
+  .aboutus .aboutus-container1 .aboutus-intro h1 {
+    font-size: 50px;
+  }
+
+  .aboutus .aboutus-container1 .aboutus-card1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .aboutus .aboutus-container1 .aboutus-card2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .aboutus .aboutus-container2 .background-circle {
+    /* height:100%; */
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--primary);
+
+    padding: 20px;
+  }
+
+  .aboutus .aboutus-part2 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .aboutus .aboutus-part2 ul li {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 10px;
+
+  }
+
+
+  /* end of about us */
+
 
 
 
@@ -910,4 +1115,34 @@ nav>div {
 
 
 
+  /* testimonial */
+
+  /* testimonial */
+
+
+}
+
+
+@media (min-width:1080px) {
+  .aboutus .aboutus-part1 {
+    flex-direction: row;
+  }
+
+  .background-circle {
+    position: relative;
+  }
+
+  .background-circle button {
+    position: absolute;
+    bottom: 6%;
+    left: 20%;
+
+    background-color: rgba(0, 0, 0, 0.093) !important;
+    color: #fff !important;
+  }
+
+  .background-circle button:hover {
+    background-color: var(--primary) !important;
+    color: #fff !important;
+  }
 }
