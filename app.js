@@ -22,13 +22,27 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: true,
   });
 
-  const top = document.querySelector(".top");
 
-  top.addEventListener("click", () => {
-    window.scroll({
-      left: 0,
-      top: 0,
-      behavior: "smooth",
-    });
+  var swiper = new Swiper(".testimonial-swiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30, 
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+    
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+    },
+
   });
 });
+
