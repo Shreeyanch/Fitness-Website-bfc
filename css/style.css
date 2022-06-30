@@ -320,6 +320,10 @@ nav>div {
 
 
 }
+.services h3{
+  display: flex;
+  justify-content: center;
+}
 
 .services button {
   display: none;
@@ -515,7 +519,18 @@ nav>div {
 /* end of about us mobile  */
 
 /* start of trainer detail */
+.trainer-desktop{
+  height: 1px;
+}
+.trainer-desktop img {
+  height: 1px;
+}
+.trainer-desktop .trainer-details-desktop{
+  line-height: 1px;
+  color: transparent;
+}
 .trainer {
+  
   background-color: var(--primary);
   margin-top: -5px;
   margin-bottom: -20.8px;
@@ -1233,6 +1248,8 @@ nav>div {
 
 
   /* start ofservice-card */
+  
+
   .services {
 
     width: 85%;
@@ -1270,15 +1287,41 @@ nav>div {
 
   /* end of service card */
   /* start of trainer cards */
+
+ 
   .trainer {
 
     display: none;
   }
 
+  .trainer-container{
+    
+  display: flex;
+  flex-direction: row;
+
+  }
+  .trainer-desktop img {
+    height: 320px;
+  }
+  .trainer-desktop .trainer-details-desktop{
+    line-height: 20px;
+    padding-top: 30px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    
+  }
+  .traiber-container{
+    display: flex;
+    flex-direction: row;
+
+  }
   .trainer-desktop {
+    height: auto;
     background-color: var(--primary);
     margin-top: -5px;
     color: aliceblue;
+    
+    width: 100vw;
   }
 
   .trainer-desktop .trainer-title-desktop {
@@ -1291,14 +1334,16 @@ nav>div {
 
 
   }
-
+  .trainer-desktop{
+    height: auto;
+  }
   .trainer-desktop .trainer-card-desktop {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    padding: 50px;
+    
+    padding: 80px;
     margin: auto;
     column-gap: 60px;
 
@@ -1340,8 +1385,10 @@ nav>div {
 
 
 @media (min-width:1080px) {
+
   .aboutus .aboutus-part1 {
     flex-direction: row;
+    margin-top: -1px;
   }
 
   .background-circle {
